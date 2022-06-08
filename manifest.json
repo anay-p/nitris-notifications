@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "version": "2.0",
+    "name": "NITRIS Notifications",
+
+    "description": "Checks for any new messages in the NITRIS portal and notifies the user if there are any.",
+
+    "icons": {
+        "48": "icons/icon48.png",
+        "64": "icons/icon64.png",
+        "96": "icons/icon96.png"
+    },
+
+    "browser_action": {
+        "default_popup": "popup/popup.htm",
+        "default_icon": {
+            "32": "icons/icon-disabled.png"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://eapplication.nitrkl.ac.in/nitris/Login.aspx"],
+            "js": ["notify.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "https://eapplication.nitrkl.ac.in/nitris/Student/Home/Home.aspx"
+    ]
+}

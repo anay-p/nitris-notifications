@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/montserrat.ttf");
+}
+
+body {
+    background-color: #1C1B22;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p, div {
+    font-size: 20px;
+}
+
+div {
+    background-color: #1974D2;
+    padding: 20px 0px;
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
+}

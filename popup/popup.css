@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/montserrat.ttf");
+}
+
+body {
+    background-color: #1C1B22;
+    font-family: Montserrat, sans-serif;
+    width: 300px;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tbody {
+    max-height: 200px;
+    display: block;
+    overflow: auto;
+    width: 100%;
+    border-top: solid 1px #52525E;
+    border-bottom: solid 1px #52525E;
+    padding-top: 10px;
+}
+
+tr {
+    display: block;
+    width: 96%;
+    margin: auto;
+}
+
+th {
+    display: block;
+    padding-bottom: 5px;
+}
+
+td {
+    background-color: #1974D2;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    width: 95%;
+    margin: auto;
+    color: inherit;
+    padding-bottom: 5px;
+}
+
+.viewAllMsgs {
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+
+div {
+    font-size: 12px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 8px;
+}
+
+.infoMsg {
+    background-color: inherit;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px;
+}
+
+button {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 0px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: solid 2px #1974D2;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.buttonOff {
+    background-color: #1C1B22;
+    transition: color 0.3s, background-color 0.3s, transform 0.05s;
+}
+
+.buttonOff:hover {
+    background-color: #1974D2;
+}
+
+.buttonOff:active {
+    transform: translateY(2px);
+}
+
+.buttonOn {
+    background-color: #1974D2;
+    transition: transform 0.05s;
+}
+
+.buttonOn:active {
+    transform: translateY(2px);
+}
+
+.buttonOn:disabled {
+    background-color: #6E6E6E;
+    border: solid 2px #6E6E6E;
+    cursor: not-allowed;
+}
